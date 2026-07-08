@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://YOUR-STRIPE-LINK" crossorigin>
+    <link rel="preconnect" href="https://donate.stripe.com/aFa3cv3XJ7d423e6EP0ZW00" crossorigin>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -105,14 +105,13 @@
     <header class="site-header">
         <div class="container nav-container">
             <a href="/" class="logo" aria-label="West Chester Bird Club Home">
-                <img src="logo.webp" alt="WCBC Logo" class="logo-img">
-                WCBC
+                <img src="logo.webp" alt="West Chester Bird Club Logo" class="logo-img">
             </a>
             <nav class="nav-links" aria-label="Main Navigation">
                 <a href="#about">About</a>
                 <a href="#mission">Mission</a>
                 <a href="#programs">Programs</a>
-                <a href="#donate">Donate</a>
+                <a href="donate.html">Donate</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -121,12 +120,17 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <h1>Protect Birds.<br>Inspire Nature.<br>Build Community.</h1>
-                <p>Founded in 1910, the West Chester Bird Club is one of the oldest continuously active bird clubs in the United States.</p>
-                <div class="hero-actions">
-                    <a href="https://YOUR-STRIPE-LINK" class="btn btn-primary btn-large">Donate Securely</a>
-                    <a href="#about" class="btn btn-secondary btn-large">Learn More</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Protect Birds.<br>Inspire Nature.<br>Build Community.</h1>
+                    <p>Founded in 1910, the West Chester Bird Club is one of the oldest continuously active bird clubs in the United States.</p>
+                    <div class="hero-actions">
+                        <a href="https://donate.stripe.com/aFa3cv3XJ7d423e6EP0ZW00" class="btn btn-primary btn-large">Donate Securely</a>
+                        <a href="#about" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="hero.webp" alt="Wild bird perched on a branch" class="hero-image">
                 </div>
             </div>
         </section>
@@ -241,23 +245,41 @@
         <section id="donate">
             <div class="container">
                 <h2>Why Donate</h2>
-                <p class="text-center" style="max-width: 600px; margin: 0 auto 2rem;">Your financial support directly fuels our local initiatives. Every contribution helps us maintain and expand our efforts in the following areas:</p>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto 3rem;">Your financial support directly fuels our local initiatives. Every contribution helps us maintain and expand our efforts in the following areas:</p>
                 <div class="grid grid-3">
-                    <ul style="list-style-type: disc; padding-left: 2rem; color: var(--color-text-muted); line-height: 2;">
-                        <li>Educational programs</li>
-                        <li>Bird conservation</li>
-                        <li>Habitat protection</li>
-                    </ul>
-                    <ul style="list-style-type: disc; padding-left: 2rem; color: var(--color-text-muted); line-height: 2;">
-                        <li>Guest speakers</li>
-                        <li>Community events</li>
-                        <li>Field trips</li>
-                    </ul>
-                    <ul style="list-style-type: disc; padding-left: 2rem; color: var(--color-text-muted); line-height: 2;">
-                        <li>Research initiatives</li>
-                        <li>Volunteer activities</li>
-                        <li>Youth engagement</li>
-                    </ul>
+                    <div class="card" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto var(--space-md);" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12,3L1,9L4,10.53V18.26C4,19.22 8,21 12,21C16,21 20,19.22 20,18.26V10.53L23,9L12,3M19.46,11.23L12,14.65L4.54,11.23L12,7.81L19.46,11.23M6,17.4V11.45L12,14.2V20.2C8.65,19.66 6,18.45 6,17.4Z"/></svg>
+                        </div>
+                        <h3 style="margin-bottom: 1rem;">Education & Community</h3>
+                        <ul style="list-style-type: none; padding: 0; color: var(--color-text-muted); line-height: 2;">
+                            <li>Educational programs</li>
+                            <li>Guest speakers</li>
+                            <li>Community events</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto var(--space-md);" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/></svg>
+                        </div>
+                        <h3 style="margin-bottom: 1rem;">Conservation & Protection</h3>
+                        <ul style="list-style-type: none; padding: 0; color: var(--color-text-muted); line-height: 2;">
+                            <li>Bird conservation</li>
+                            <li>Habitat protection</li>
+                            <li>Research initiatives</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto var(--space-md);" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M14,12V19.88C14.04,20.18 13.94,20.5 13.71,20.71C13.32,21.1 12.69,21.1 12.3,20.71L10.29,18.7C10.06,18.47 9.96,18.16 10,17.87V12H9.97L4.21,4.62C3.87,4.19 3.95,3.56 4.38,3.22C4.57,3.08 4.78,3 5,3V3H19V3C19.22,3 19.43,3.08 19.62,3.22C20.05,3.56 20.13,4.19 19.79,4.62L14.03,12H14Z"/></svg>
+                        </div>
+                        <h3 style="margin-bottom: 1rem;">Action & Engagement</h3>
+                        <ul style="list-style-type: none; padding: 0; color: var(--color-text-muted); line-height: 2;">
+                            <li>Field trips</li>
+                            <li>Volunteer activities</li>
+                            <li>Youth engagement</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -266,7 +288,7 @@
         <section class="cta-section">
             <h2>Support Our Mission</h2>
             <p>Your donation matters. Help us continue over a century of bird conservation, education, and community building.</p>
-            <a href="https://YOUR-STRIPE-LINK" class="btn btn-white btn-large">Donate Securely</a>
+            <a href="https://donate.stripe.com/aFa3cv3XJ7d423e6EP0ZW00" class="btn btn-white btn-large">Donate Securely</a>
         </section>
 
         <!-- FAQ -->
@@ -326,8 +348,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="/" class="logo" style="margin-bottom: 1rem;">
-                        <img src="logo.webp" alt="WCBC Logo" class="logo-img" style="width: 32px; height: 32px;">
-                        WCBC
+                        <img src="logo.webp" alt="West Chester Bird Club Logo" class="logo-img" style="height: 64px;">
                     </a>
                     <p>Protecting wild birds and inspiring nature enthusiasts in Pennsylvania since 1910.</p>
                 </div>
@@ -342,7 +363,7 @@
                 <div class="footer-nav">
                     <h4>Support</h4>
                     <ul>
-                        <li><a href="https://YOUR-STRIPE-LINK">Donate</a></li>
+                        <li><a href="donate.html">Donate</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
